@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "nodemon --inspect dist/index.js",
     "watch": "tsc -w",
-    "start": "concurrently --kill-others \"npm run dev\" \"npm run watch\""
+    "start:dev": "concurrently --kill-others \"npm run dev\" \"npm run watch\"",
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
